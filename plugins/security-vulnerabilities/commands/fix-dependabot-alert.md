@@ -1,5 +1,5 @@
 ---
-allowed-tools: *
+allowed-tools: "*"
 argument-hint: [alert-id]
 description: Fix a specific Dependabot security alert and verify all tests pass
 ---
