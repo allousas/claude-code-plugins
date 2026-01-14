@@ -1,5 +1,4 @@
 ---
-allowed-tools: "*"
 argument-hint: none
 description: List all open Dependabot security alerts with IDs, severity, and brief summary
 ---

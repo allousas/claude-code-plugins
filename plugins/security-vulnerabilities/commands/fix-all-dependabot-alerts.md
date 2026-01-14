@@ -1,5 +1,4 @@
 ---
-allowed-tools: "*"
 argument-hint: none
 description: Fix all open Dependabot security alerts one by one
 ---
