@@ -39,7 +39,7 @@ Show the alert details to the user.
 **If the alert is already fixed:**
 - Show the proof to the user (include command output demonstrating the dependency is no longer vulnerable)
 - Ask the user if they want to dismiss the alert
-- If user confirms, dismiss the alert via GitHub API with state "dismissed" and reason "no_bandwidth" or "tolerable_risk" as appropriate
+- If user confirms, dismiss the alert via GitHub API with state "dismissed" and reason "not_used" as appropriate
 - Include proof in the dismissal comment showing the dependency is no longer vulnerable
 - Use the following API call:
   ```bash
@@ -49,10 +49,11 @@ Show the alert details to the user.
     https://api.github.com/repos/[ACCOUNT]/[REPO]/dependabot/alerts/$1 \
     -d '{"state":"dismissed","dismissed_reason":"not_used","dismissed_comment":"Alert already fixed. Proof: [include verification output here]"}'
   ```
-- Skip to Step 5 (Summary) and report the dismissal
+- Skip to Step 4 & 5 (Summary) and report the dismissal
 
 **If the alert is not yet fixed:**
 - Fix the security vulnerability. **All tests must run and pass.**
+  - **If you are not able to make the test pass**, ask user what to do
 - **If the vulnerability involves a library/dependency fix, ensure the vulnerable library is completely removed from the final artifact.** Verify using appropriate dependency commands and collect proof for the summary report.
 - **If the fix requires a breaking change (major version update, API changes, etc.), ask the user to proceed before applying the fix.**
 
