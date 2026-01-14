@@ -49,8 +49,8 @@ Sort alerts by severity (critical → high → medium → low).
 ## Step 4: Next Steps
 
 Inform the user they can:
-- Fix a specific alert: `/security-vulnerabilities:fix-dependabot-alert [ACCOUNT] [REPO] [ALERT-ID]`
-- Fix all alerts: `/security-vulnerabilities:fix-all-dependabot-alerts [ACCOUNT] [REPO]`
+- Fix a specific alert: `/security-vulnerabilities:fix-dependabot-alert [ALERT-ID]`
+- Fix all alerts: `/security-vulnerabilities:fix-all-dependabot-alerts`
 
 Display the extracted ACCOUNT and REPO values for easy reference.
 
