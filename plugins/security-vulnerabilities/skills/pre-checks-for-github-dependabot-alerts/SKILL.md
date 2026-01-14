@@ -1,5 +1,5 @@
 ---
-allowed-tools: *
+allowed-tools: "*"
 description: Performs prerequisites check and extracts GitHub account/repo from local git remote for Dependabot operations. Use when working with Dependabot alerts.
 ---
 
