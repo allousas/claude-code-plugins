@@ -1,7 +1,7 @@
 {
 "name": "security-vulnerabilities",
 "description": "A plugin that fixes security vulnerabilities in codebases by identifying and patching known issues.",
-"version": "1.0.0",
+"version": "1.0.1",
 "author": {
         "name": "allousas"
     }
