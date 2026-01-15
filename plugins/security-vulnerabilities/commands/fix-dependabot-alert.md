@@ -70,7 +70,7 @@ https://github.com/[ACCOUNT]/[REPO]/security/dependabot/$1
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
 
-**Prepend `[{TASK-NUMBER}]` if branch name contains task number.**
+**Prepend `[{TASK-ID}]` if branch name contains a task id.**
 
 Ask user to confirm (HUMAN_IN_LOOP = true) or commit immediately (HUMAN_IN_LOOP = false).
 
