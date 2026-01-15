@@ -49,7 +49,8 @@ Verify vulnerable dependency using appropriate commands (`gradle dependencies`, 
 **If not fixed:**
 - Fix the vulnerability
 - Validate: Run tests (SKIP_TESTS=false) or build only (SKIP_TESTS=true)
-- If validation fails: Report and stop (HUMAN_IN_LOOP = false) or ask user (HUMAN_IN_LOOP = true)
+  - If validation fails try to fix it
+  - If validation still fail: Report and stop (HUMAN_IN_LOOP = false) or ask user (HUMAN_IN_LOOP = true)
 - Verify vulnerable library removed from artifact, collect proof
 - **Breaking changes:** Always ask for approval first (regardless HUMAN_IN_LOOP value) 
 
