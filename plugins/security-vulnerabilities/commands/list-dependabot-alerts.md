@@ -25,23 +25,21 @@ curl -H "Authorization: Bearer $GITHUB_DEPENDABOT_PAT" \
   https://api.github.com/repos/[ACCOUNT]/[REPO]/dependabot/alerts?state=open
 ```
 
+
 **If there are no alerts or an error occurs, inform the user and stop execution.**
 
 ## Step 3: Display Summary
 
 Present the alerts to the user in a clean, readable format:
 
-**Total Alerts:** [number]
+**Total Alerts:** [{use jq 'length', on the prev response, if not working, just count by yourself}] 
 
 **Alert Summary:**
 
 For each alert, display:
 - **Alert ID:** [id]
 - **Severity:** [severity] (critical/high/medium/low)
-- **Package:** [package_name]
-- **Vulnerable Version:** [vulnerable_version]
 - **Summary:** [brief description of the vulnerability]
-- **CVE:** [CVE ID if available]
 - **URL:** [link to the alert on GitHub]
 
 Sort alerts by severity (critical → high → medium → low).

@@ -1,16 +1,20 @@
 ---
-argument-hint: [alert-id]
+argument-hint: [alert-id] [skip-tests=false]
 description: Fix a specific Dependabot security alert and verify all tests pass
 ---
 
+
 # Fix Dependabot Alert
 
-This command will:
-1. Fetch the specific Dependabot alert details
-2. Analyze the vulnerability and required fix
-3. Apply the fix to resolve the security issue
-4. Run all tests to ensure nothing breaks
-5. Create a commit with the security fix
+- Fetches detailed information about the specified alert
+- Checks if the vulnerability is already fixed
+- If already fixed: Offers to dismiss the alert with proof
+- If not fixed:
+    - Updates the vulnerable dependency
+    - Runs all tests to ensure nothing breaks
+    - Verifies the vulnerable library is removed
+    - Creates a commit with the security fix
+- Handles breaking changes by asking for approval first
 
 ## Step 1: Pre-checks
 
@@ -52,10 +56,14 @@ Show the alert details to the user.
 - Skip to Step 4 & 5 (Summary) and report the dismissal
 
 **If the alert is not yet fixed:**
-- Fix the security vulnerability. **All tests must run and pass.**
-  - **If you are not able to make the test pass**, ask user what to do
+- Fix the security vulnerability. 
+- Proceed with:
+  - If {$2} is false **All tests must run and pass**
+  - Else **Just check that project builds successfully**
+  - Ask user what to do if fails
 - **If the vulnerability involves a library/dependency fix, ensure the vulnerable library is completely removed from the final artifact.** Verify using appropriate dependency commands and collect proof for the summary report.
 - **If the fix requires a breaking change (major version update, API changes, etc.), ask the user to proceed before applying the fix.**
+- **Proof that vulnerability has been fixed** 
 
 ## Step 4: Create Commit
 
@@ -72,7 +80,6 @@ Report to the user:
 - Alert ID fixed
 - Package and versions (before/after)
 - Vulnerability details (CVE, severity)
-- **Proof that vulnerable library has been removed from dependencies** (include command output showing the library is no longer present)
 - Test results
 - Files modified
 - Commit created

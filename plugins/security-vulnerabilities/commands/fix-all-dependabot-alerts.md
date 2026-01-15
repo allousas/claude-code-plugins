@@ -1,5 +1,5 @@
 ---
-argument-hint: none
+argument-hint: [skip-tests=false]
 description: Fix all open Dependabot security alerts one by one
 ---
 
@@ -37,7 +37,7 @@ Show the user:
 For each alert found, call the fix-dependabot-alert command:
 
 ```
-/security-vulnerabilities:fix-dependabot-alert [alert-id]
+/security-vulnerabilities:fix-dependabot-alert [alert-id] [$1]
 ```
 
 Process alerts sequentially (one at a time, not in parallel).

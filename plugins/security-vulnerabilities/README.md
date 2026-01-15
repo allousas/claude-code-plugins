@@ -50,10 +50,7 @@ View all open security alerts in your repository:
 /security-vulnerabilities:list-dependabot-alerts
 ```
 
-**What it does:**
-- Fetches all open Dependabot alerts from GitHub
-- Displays a summary table
-- Sorts alerts by severity for easier prioritization
+See [list-dependabot-alerts command](commands/list-dependabot-alerts.md) for details.
 
 **Use this command when:**
 - You want to see what security vulnerabilities exist
@@ -68,16 +65,7 @@ Fix a specific security alert:
 /security-vulnerabilities:fix-dependabot-alert 123
 ```
 
-**What it does:**
-- Fetches detailed information about the specified alert
-- Checks if the vulnerability is already fixed
-- If already fixed: Offers to dismiss the alert with proof
-- If not fixed:
-  - Updates the vulnerable dependency
-  - Runs all tests to ensure nothing breaks
-  - Verifies the vulnerable library is removed
-  - Creates a commit with the security fix
-- Handles breaking changes by asking for approval first
+See [fix-dependabot-alert command](commands/fix-dependabot-alert.md) for details.
 
 **Use this command when:**
 - You want to fix a specific vulnerability
@@ -92,12 +80,7 @@ Automatically fix all open security alerts:
 /security-vulnerabilities:fix-all-dependabot-alerts
 ```
 
-**What it does:**
-- Fetches all open Dependabot alerts
-- Processes each alert sequentially (one at a time)
-- For each alert, calls the fix-dependabot-alert command
-- Continues even if some alerts fail to fix
-- Provides a final summary with success/failure counts
+See [fix-all-dependabot-alerts command](commands/fix-all-dependabot-alerts.md) for details.
 
 **Use this command when:**
 - You want to fix all vulnerabilities at once
