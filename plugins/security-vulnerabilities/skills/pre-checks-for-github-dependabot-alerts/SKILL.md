@@ -11,14 +11,19 @@ This skill performs common pre-checks required for all Dependabot alert operatio
 
 ## Step 1: Prerequisites Check
 
-Check if the `$GITHUB_DEPENDABOT_PAT` environment variable is set:
+Check if the `$GITHUB_DEPENDABOT_PAT` environment variable is set without printing its value:
 
 ```bash
-echo "$GITHUB_DEPENDABOT_PAT"
+if [ -z "$GITHUB_DEPENDABOT_PAT" ]; then
+  echo "❌ GITHUB_DEPENDABOT_PAT environment variable is not set"
+  echo "Please set this environment variable with a valid GitHub Personal Access Token that has 'security_events' scope"
+  exit 1
+fi
+echo "✅ GITHUB_DEPENDABOT_PAT is configured"
 ```
 
 **If the variable is empty or not set:**
-- Stop execution with error message: "GITHUB_DEPENDABOT_PAT environment variable is required."
+- Stop execution immediately
 - Inform the user they need to set this environment variable with a valid GitHub Personal Access Token that has `security_events` scope
 
 ## Step 2: Extract GitHub Repository Info

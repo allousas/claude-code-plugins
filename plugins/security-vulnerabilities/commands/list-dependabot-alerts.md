@@ -22,7 +22,7 @@ Retrieve all open Dependabot alerts from GitHub:
 ```bash
 curl -H "Authorization: Bearer $GITHUB_DEPENDABOT_PAT" \
   -H "Accept: application/vnd.github+json" \
-  https://api.github.com/repos/[ACCOUNT]/[REPO]/dependabot/alerts?state=open
+  "https://api.github.com/repos/[ACCOUNT]/[REPO]/dependabot/alerts?state=open"
 ```
 
 
@@ -30,19 +30,17 @@ curl -H "Authorization: Bearer $GITHUB_DEPENDABOT_PAT" \
 
 ## Step 3: Display Summary
 
-Present the alerts to the user in a clean, readable format:
-
-**Total Alerts:** [{use jq 'length', on the prev response, if not working, just count by yourself}] 
-
-**Alert Summary:**
+Present the alerts to the user in a clean, readable format, Sorted by severity :
 
 For each alert, display:
+**Alert Summary:**
+
 - **Alert ID:** [id]
-- **Severity:** [severity] (critical/high/medium/low)
 - **Summary:** [brief description of the vulnerability]
 - **URL:** [link to the alert on GitHub]
 
-Sort alerts by severity (critical → high → medium → low).
+Finally:
+**Total Alerts:** [{use jq 'length', on the prev response, if not working, just count by yourself}]
 
 ## Step 4: Next Steps
 
