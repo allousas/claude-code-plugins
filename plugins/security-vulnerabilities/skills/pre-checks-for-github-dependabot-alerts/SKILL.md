@@ -9,7 +9,7 @@ This skill performs common pre-checks required for all Dependabot alert operatio
 1. Verifies the `$GITHUB_DEPENDABOT_PAT` environment variable is set
 2. Extracts GitHub account and repository name from local git remote
 
-## Step 1: Prerequisites Check
+## Pre-checks: Step Check Required Env Vars
 
 Check if the `$GITHUB_DEPENDABOT_PAT` environment variable is set without printing its value:
 
@@ -26,7 +26,7 @@ echo "✅ GITHUB_DEPENDABOT_PAT is configured"
 - Stop execution immediately
 - Inform the user they need to set this environment variable with a valid GitHub Personal Access Token that has `security_events` scope
 
-## Step 2: Extract GitHub Repository Info
+## Pre-checks: Step Extract GitHub Repository Info
 
 Extract the GitHub account and repository name from the git remote URL:
 
@@ -47,7 +47,7 @@ Parse the output to extract the account and repo name. The URL will typically be
 **If the command fails or the URL is not a GitHub URL:**
 - Stop execution with error message: "Could not extract GitHub repository information from git remote. Please ensure you're in a git repository with a GitHub remote."
 
-## Step 3: Return Values
+## Pre-checks: Step Return Values
 
 Store and return the following values for use by the calling command:
 - `ACCOUNT`: GitHub account/organization name
