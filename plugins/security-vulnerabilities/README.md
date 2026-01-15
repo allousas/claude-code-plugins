@@ -52,12 +52,7 @@ View all open security alerts in your repository:
 
 **What it does:**
 - Fetches all open Dependabot alerts from GitHub
-- Displays a summary table with:
-  - Alert ID
-  - Severity level (critical/high/medium/low)
-  - Package name and vulnerable version
-  - Brief vulnerability description
-  - CVE ID (if available)
+- Displays a summary table
 - Sorts alerts by severity for easier prioritization
 
 **Use this command when:**

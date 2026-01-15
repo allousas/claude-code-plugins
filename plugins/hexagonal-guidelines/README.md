@@ -24,14 +24,10 @@ When Claude implements features, it follows your documented patterns consistentl
 
 ## Quick Start
 
-### 1. Fork and Customize with your own team or company specific hexagonal guidelines
-Fork this repo and edit `hexagonal-guidelines/skills/hexagonal-implementation-guidelines/references/`:
-- `layers/domain-layer.md`, `layers/app-services-layer.md`, `layers/infra-inbound.md`, `layers/infra-outbound.md`, `layers/infra-config.md`
-- `code-conventions.md`, `error-handling.md`, `test-guidelines.md`, `tech-stack.md`, `hexagonal-shortcuts.md`, `side-effects.md`
+### 1. Use it
 
-**Critical:** Use code from YOUR actual services, not generic examples. Real code makes Claude follow your specific patterns.
+Start a project from scratch and just write:
 
-### 2. Use it
 ```bash
 # TDD: Layer-by-layer with checkpoints after each layer
 /hexagonal-guidelines:implement-supervised "Allow users to set a numeric code when closing a locker"
@@ -42,6 +38,18 @@ Fork this repo and edit `hexagonal-guidelines/skills/hexagonal-implementation-gu
 # Check architecture compliance 
 Use the architecture-auditor sub-agent to analyze this codebase
 ```
+
+You can also do it in existent codebases, but it will follow the guidelines, you can disable the 
+skill `hexagonal-implementation-guidelines` or adapt it to your/company style
+
+### 2. Fork and Customize with your own team or company specific hexagonal guidelines
+Fork this repo and edit `hexagonal-guidelines/skills/hexagonal-implementation-guidelines/references/`:
+- `layers/domain-layer.md`, `layers/app-services-layer.md`, `layers/infra-inbound.md`, `layers/infra-outbound.md`, `layers/infra-config.md`
+- `code-conventions.md`, `error-handling.md`, `test-guidelines.md`, `tech-stack.md`, `hexagonal-shortcuts.md`, `side-effects.md`
+
+For testing distribution check [this](../../README.md#customizations) 
+
+**Critical:** Use code from YOUR actual services, not generic examples. Real code makes Claude follow your specific patterns.
 
 
 ---
