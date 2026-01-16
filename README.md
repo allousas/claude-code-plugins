@@ -2,6 +2,8 @@
 
 A collection of Claude Code plugins to enhance your development workflow with AI-powered automation.
 
+**IMPORTANT NOTE: This repository is my way of learning and experimenting with Claude Code plugins. It is not intended for production use. Please review and test thoroughly before using in real projects.**
+
 ## Available Plugins
 
 ### 1. Hexagonal Guidelines
