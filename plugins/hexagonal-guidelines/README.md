@@ -2,6 +2,8 @@
 
 **Claude Code plugin that maintains consistent hexagonal architecture guidelines and patterns across big microservices ecosystems.**
 
+**IMPORTANT NOTE:** As mentioned in the root readme, this is experimental and not intended to be used in prod environments yet. 
+
 ## The Problem
 
 Your microservices drift architecturally over time:
@@ -18,7 +20,7 @@ This plugin provides:
 1. **Hexagonal implementation guidelines** - Your team's/company hexagonal patterns documented in markdown with code examples, with customizable references.
 2. **Guided Implementation** - Two workflows (TDD layer-by-layer, or upfront design) with **Human Checkpoints** - Claude asks for approval at key decision points
 3. **Architecture Auditor** - Automated agent that audits your codebase for violations
-4. **Migration planner** - Automated agent that creates an actionable plan to migrate existing code to comply with your patterns
+4. **Migration planner** - To be done
 
 When Claude implements features, it follows your documented patterns consistently.
 
