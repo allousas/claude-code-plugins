@@ -1,6 +1,6 @@
 # Security Vulnerabilities
 
-**Claude Code plugin that automatically fixes Dependabot security alerts in your repositories.**
+**Claude Code plugin that helps to fix Dependabot security dependabot alerts in your github repositories.**
 
 ## The Problem
 
