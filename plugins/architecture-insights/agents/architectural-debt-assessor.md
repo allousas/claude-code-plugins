@@ -23,12 +23,12 @@ Check the boxes (mark with [x]) for constraints you want to enforce, edit any it
 **Maximum 10 constraints** - focus on the most critical ones for your project.
 
 - [ ] Architecture style (hexagonal or layered) is explicit and consistently applied with no mixing
-- [ ] Inbound DTOs (controllers, Kafka, etc.) must not enter service or domain layers; use domain entities or service request objects instead.
-- [ ] Outbound infrastructure (database or external-system DTOs) must not be leaked to service or domain layers, including in parameters or return types.
-- [ ] Use-case services must not depend on other use-case services (they represent independent application operations)
-- [ ] Business logic must live in the domain layer (not in controllers, handlers, or infrastructure services)
-- [ ] Side effects must be isolated in the infrastructure layer (no side effects, logs, metrics in domain or application layers)
-- [ ] Any business operation in the system should be auditable, so a proper event mechanism should be in place.
+- [ ] Inbound DTOs (controllers, Kafka, etc.) MUST NOT enter service or domain layers; use domain entities or service request objects instead.
+- [ ] Outbound infrastructure (database or external-system DTOs) MUST NOT be leaked to service or domain layers, including in parameters or return types.
+- [ ] Each service-layer service represents a single application business operation and MUST NOT depend on other service-layer services.
+- [ ] Business logic MUST live in the domain layer (not in controllers, handlers, or infrastructure services)
+- [ ] Side effects MUST be isolated in the infrastructure layer (no side effects, logs, metrics in domain or application layers)
+- [ ] Any business operation in the system SHOULD be auditable, so a proper event mechanism should be in place.
 - [ ] Add here a project-specific constraint...
 - [ ] Add here a project-specific constraint...
 
