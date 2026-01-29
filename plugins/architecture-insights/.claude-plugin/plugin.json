@@ -1,0 +1,8 @@
+{
+"name": "architecture-insights",
+"description": "A plugin that provides agents that offer insights and analysis on projects related to software architecture.",
+"version": "1.0.0",
+"author": {
+        "name": "allousas"
+    }
+}

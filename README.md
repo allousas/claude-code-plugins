@@ -28,6 +28,17 @@ Automatically fixes Dependabot security alerts in your repositories.
 
 [View Documentation →](./plugins/security-vulnerabilities/README.md)
 
+### 3. Architecture Insights
+Identifies and assesses architectural debt based on customizable constraints.
+
+**Key Features:**
+- Customizable constraint definition (max 10 constraints)
+- Automated codebase scanning for violations
+- Prioritized assessment with severity scores
+- Actionable recommendations grouped by constraint
+
+[View Documentation →](./plugins/architecture-insights/README.md)
+
 ## Installation
 
 ### Option 1: Install from GitHub (Recommended)
@@ -46,6 +57,9 @@ Then install the plugins:
 
 # Install security vulnerabilities
 /plugin install security-vulnerabilities
+
+# Install architecture insights
+/plugin install architecture-insights
 ```
 
 ### Customizations
@@ -55,7 +69,3 @@ Please fork the repository and make your changes.
 Then follow: 
 - testing locally: https://code.claude.com/docs/en/plugins#test-your-plugins-locally
 - Distributing: https://code.claude.com/docs/en/plugin-marketplaces
-
-## License
-
-MIT

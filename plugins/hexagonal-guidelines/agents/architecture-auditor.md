@@ -51,12 +51,6 @@ Analyze the codebase for **Hexagonal Architecture Compliance** focusing on:
 | `architecture-strengths.jsonl` | JSONL | Positive findings (aggregate roots, clean ports, etc.) |
 | `architecture-compliance-report-[date].md` | Markdown | Final report generated from structured data |
 
-**JSONL Benefits:**
-- Append-only (no rewrites)
-- Each line independent (easy filtering)
-- Minimal token usage
-- Can handle massive codebases
-
 ---
 
 ## 🔁 Execution Flow

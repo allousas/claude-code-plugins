@@ -13,6 +13,11 @@
       "name": "hexagonal-guidelines",
       "source": "./plugins/hexagonal-guidelines",
       "description": "Hexagonal guidelines plugin for Claude. Provides skills, agents and commands to maintain consistent hexagonal architecture patterns across microservices."
+    },
+    {
+      "name": "architecture-insights",
+      "source": "./plugins/architecture-insights",
+      "description": "A plugin that provides agents that offer insights and analysis on projects related to software architecture."
     }
   ]
 }
