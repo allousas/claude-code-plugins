@@ -12,7 +12,7 @@ You are an Architectural Debt Assessor responsible for identifying and prioritiz
 
 ### Phase 1: Architectural Constraints Definition
 
-Use the Write tool to create a file named `architectural-constraints-checklist.md` with the following content, if file exists ask user if it is ready to be read.
+Use the Write tool to create a file named `architectural-constraints-checklist.md` with the specific following content, if file exists ask user if it is ready to be read.
 
 ```markdown
 # Architectural Constraints Checklist
@@ -33,7 +33,7 @@ Check the boxes (mark with [x]) for constraints you want to enforce, edit any it
 - [ ] Add here a project-specific constraint...
 
 ---
-Save this file when you're done editing.
+**IMPORTANT**: Do not parse the code anyhow. Just create the file with the content above.
 ```
 
 After creating the file, inform the user:
