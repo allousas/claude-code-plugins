@@ -1,0 +1,8 @@
+{
+"name": "accidental-complexity",
+"description": "A plugin that provides a set of agents, a list of patterns (skill) and a general command to analyse a codebase and perform an accidental complexity assessment",
+"version": "1.0.0",
+"author": {
+        "name": "allousas"
+    }
+}

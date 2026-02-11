@@ -2,7 +2,9 @@
 
 A collection of Claude Code plugins to enhance your development workflow with AI-powered automation.
 
-**IMPORTANT NOTE: This repository is my way of learning and experimenting with Claude Code capabilities. It is not intended for production use. Please review and test thoroughly before using in real projects.**
+**IMPORTANT NOTE**:This repository is my way of learning and experimenting with Claude Code capabilities. 
+It is not intended for production use. Please review and test thoroughly before using in real projects. 
+Result are not optimal yet, agents may hallucinate or produce unexpected results. Use for learning and exploration purposes.
 
 ## Available Plugins
 
@@ -28,16 +30,16 @@ Automatically fixes Dependabot security alerts in your repositories.
 
 [View Documentation →](./plugins/security-vulnerabilities/README.md)
 
-### 3. Architecture Insights
-Identifies and assesses architectural debt based on customizable constraints.
+### 3. Accidental Complexity
+Systematically identifies and analyzes accidental complexity patterns in your codebase.
 
 **Key Features:**
-- Customizable constraint definition (max 10 constraints)
-- Automated codebase scanning for violations
-- Prioritized assessment with severity scores
-- Actionable recommendations grouped by constraint
+- Automated file selection with intelligent filtering (tests, generated code, configs)
+- Pattern-based analysis for framework tax, over-engineering, and unnecessary indirection
+- Structured JSONL findings with severity levels
+- Comprehensive markdown reports with actionable recommendations
 
-[View Documentation →](./plugins/architecture-insights/README.md)
+[View Documentation →](./plugins/accidental-complexity/README.MD)
 
 ## Installation
 
@@ -58,8 +60,8 @@ Then install the plugins:
 # Install security vulnerabilities
 /plugin install security-vulnerabilities
 
-# Install architecture insights
-/plugin install architecture-insights
+# Install accidental complexity
+/plugin install accidental-complexity
 ```
 
 ### Customizations

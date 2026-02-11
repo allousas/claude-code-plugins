@@ -3,7 +3,7 @@
 **Claude Code plugin that maintains consistent hexagonal architecture guidelines and patterns across big microservices ecosystems.**
 
 **IMPORTANT NOTE:** As mentioned in the root readme, this is experimental and not intended to be used in prod environments, 
-for now this plugin does not generate the expected results and I personally consider that it is over-engineered. 
+for now this plugin does **not generate the expected results** and I personally consider that it **is over-engineered**. 
 
 ## The Problem
 

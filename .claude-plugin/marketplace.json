@@ -15,9 +15,9 @@
       "description": "Hexagonal guidelines plugin for Claude. Provides skills, agents and commands to maintain consistent hexagonal architecture patterns across microservices."
     },
     {
-      "name": "architecture-insights",
-      "source": "./plugins/architecture-insights",
-      "description": "A plugin that provides agents that offer insights and analysis on projects related to software architecture."
+      "name": "accidental-complexity",
+      "description": "A plugin that provides a set of agents, a list of patterns (skill) and a general command to analyse a codebase and perform an accidental complexity assessment",
+      "source": "./accidental-complexity"
     }
   ]
 }

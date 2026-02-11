@@ -2,8 +2,8 @@
 
 **Claude Code plugin that helps to fix Dependabot security dependabot alerts in your github repositories.**
 
-IMPORTANT-NOTE: As mentioned in the main readme, this is experimental, to learn claude capabilities and not intended to be used in prod environments.
-IMPORTANT-NOTE 2: Results are not yet optimal, agent tends to hallucinate and produce unexpected results or omit parameters, please use it for learning purposes.
+**IMPORTANT-NOTE:** As mentioned in the main readme, this is experimental, to learn claude capabilities and not intended to be used in prod environments.
+**IMPORTANT-NOTE 2:** Results are not optimal yet, agent tends to hallucinate and produce unexpected results or omit parameters, please use it for learning purposes.
 
 ## The Problem
 

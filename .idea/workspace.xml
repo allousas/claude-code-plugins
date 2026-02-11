@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e2afb5d-b467-47f2-9fe0-530575810664" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/plugins/code-insights/agents/accidental-complexity-analyzer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/code-insights/agents/accidental-complexity-patterns.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude-plugin/marketplace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude-plugin/marketplace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/architecture-insights/.claude-plugin/plugin.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/code-insights/.claude-plugin/plugin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/architecture-insights/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/code-insights/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/architecture-insights/agents/architectural-debt-assessor.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/code-insights/agents/architectural-debt-assessor.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/allousas/dev/tests/locker-access-control-system-with-ai" value="37C9FlhrNZgCGik8nQ538YLpa2k" />
+    </persistenceIdMap>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="locker-access-control-system" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.14-bin/38aieal9i53h9rfe7vjup95b9/gradle-8.14" javaHome="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home" gradleVersion="8.14" />
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="37C9FlhrNZgCGik8nQ538YLpa2k" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/allousas/dev/tests/locker-access-control-system-with-ai/plugins/architecture-insights/agents&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/plugins/architecture-insights/agents" />
+      <recent name="$PROJECT_DIR$/plugins/architecture-insights" />
+      <recent name="$PROJECT_DIR$/security-vulnerabilities" />
+      <recent name="$PROJECT_DIR$/hexagonal-guidelines/agents" />
+      <recent name="$PROJECT_DIR$/.claude/commands" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/plugins/code-insights/agents" />
+      <recent name="$PROJECT_DIR$/plugins" />
+      <recent name="$PROJECT_DIR$/.claude-plugin" />
+      <recent name="$PROJECT_DIR$/hexagonal-guidelines" />
+      <recent name="$PROJECT_DIR$/security-vulnerabilities/commands" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="locker-access-control-system.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="locker.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28539.33" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28539.33" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e2afb5d-b467-47f2-9fe0-530575810664" name="Changes" comment="" />
+      <created>1766396084743</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766396084743</updated>
+      <workItem from="1766396085990" duration="26972000" />
+      <workItem from="1766469638412" duration="138000" />
+      <workItem from="1766469779975" duration="6417000" />
+      <workItem from="1766476413303" duration="11170000" />
+      <workItem from="1766496876295" duration="16255000" />
+      <workItem from="1766905288178" duration="5205000" />
+      <workItem from="1767159974985" duration="22000" />
+      <workItem from="1767160001395" duration="662000" />
+      <workItem from="1767160669004" duration="7390000" />
+      <workItem from="1767201170288" duration="104000" />
+      <workItem from="1767616037896" duration="552000" />
+      <workItem from="1767696322847" duration="16602000" />
+      <workItem from="1767768973392" duration="3583000" />
+      <workItem from="1767777465042" duration="203000" />
+      <workItem from="1767777675179" duration="35044000" />
+      <workItem from="1768226311560" duration="1169000" />
+      <workItem from="1768231128563" duration="4616000" />
+      <workItem from="1768240591304" duration="44000" />
+      <workItem from="1768295161379" duration="2583000" />
+      <workItem from="1768298237297" duration="21299000" />
+      <workItem from="1768370270419" duration="48249000" />
+      <workItem from="1769076588902" duration="12000" />
+      <workItem from="1769188097900" duration="505000" />
+      <workItem from="1769237433740" duration="40959000" />
+      <workItem from="1770444850240" duration="37986000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
