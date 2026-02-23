@@ -1,6 +1,6 @@
 # Claude Code Plugins Collection
 
-A collection of Claude Code plugins to enhance your development workflow with AI-powered automation.
+A collection of Claude Code plugins to enhance development workflows with AI-powered automation.
 
 **IMPORTANT NOTE**:This repository is my way of learning and experimenting with Claude Code capabilities. 
 It is not intended for production use. Please review and test thoroughly before using in real projects. 
@@ -30,16 +30,16 @@ Automatically fixes Dependabot security alerts in your repositories.
 
 [View Documentation →](./plugins/security-vulnerabilities/README.md)
 
-### 3. Accidental Complexity
-Systematically identifies and analyzes accidental complexity patterns in your codebase.
+### 3. Code Insights
+Set of agents that analyze codebases to provide different insights, starting with accidental complexity analysis.
 
 **Key Features:**
-- Automated file selection with intelligent filtering (tests, generated code, configs)
-- Pattern-based analysis for framework tax, over-engineering, and unnecessary indirection
-- Structured JSONL findings with severity levels
-- Comprehensive markdown reports with actionable recommendations
+- Detects 20+ complexity anti-patterns across 7 categories
+- Analyzes cognitive overload, destructive decoupling, and framework tax
+- Structured JSONL findings with file:line references
+- Comprehensive markdown reports with pattern statistics
 
-[View Documentation →](./plugins/accidental-complexity/README.MD)
+[View Documentation →](./plugins/code-insights/README.md)
 
 ## Installation
 
@@ -60,8 +60,8 @@ Then install the plugins:
 # Install security vulnerabilities
 /plugin install security-vulnerabilities
 
-# Install accidental complexity
-/plugin install accidental-complexity
+# Install code insights
+/plugin install code-insights
 ```
 
 ### Customizations

@@ -1,0 +1,8 @@
+{
+  "name": "code-recipes",
+  "description": "Implementation patterns and recipes for Kotlin development, including application services, repositories, and error handling",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}
