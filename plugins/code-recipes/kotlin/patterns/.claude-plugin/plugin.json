@@ -1,0 +1,8 @@
+{
+  "name": "kotlin-patterns",
+  "description": "Implementation patterns for Kotlin microservices (domain events, optimistic locking, outbox)",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}

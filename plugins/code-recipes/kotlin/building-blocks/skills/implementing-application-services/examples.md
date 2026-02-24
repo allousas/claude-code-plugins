@@ -20,7 +20,7 @@ class CreateTeamService(
 }
 ```
 
-## Using Either to handle errors
+## Service using Either to handle errors
 ```kotlin
 @Service
 class CreateTeamService(
@@ -38,3 +38,17 @@ class CreateTeamService(
     }
 }
 ```
+## Query Handler
+```kotlin
+@Service
+class CanTeamAcceptMemberQueryHandler(
+    private val teamRepository: TeamRepository
+) {
+
+    operator fun invoke(query: CanTeamAcceptMemberQuery): TeamCapacityView {
+        val team = teamRepository.findById(query.teamId) ?: throw IllegalArgumentException("Team not found")
+        return TeamCapacityView(team.id, team.canAcceptNewMember(), team.availableSpots())
+    }
+}
+```
+

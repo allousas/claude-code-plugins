@@ -1,0 +1,8 @@
+{
+  "name": "kotlin-architecture",
+  "description": "Architecture style skills for Kotlin microservices (hexagonal, layered)",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}

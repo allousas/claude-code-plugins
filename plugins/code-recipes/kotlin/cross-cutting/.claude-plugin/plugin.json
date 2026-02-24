@@ -1,0 +1,8 @@
+{
+  "name": "kotlin-cross-cutting",
+  "description": "Cross-cutting concerns for Kotlin microservices (error handling, testing, database schema, configuration, code review)",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}

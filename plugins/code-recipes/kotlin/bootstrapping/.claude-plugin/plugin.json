@@ -1,0 +1,8 @@
+{
+  "name": "kotlin-bootstrapping",
+  "description": "Project bootstrapping skills for new Kotlin microservices",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}

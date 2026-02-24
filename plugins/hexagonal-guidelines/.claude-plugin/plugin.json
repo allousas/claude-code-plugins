@@ -1,8 +1,0 @@
-{
-"name": "hexagonal-guidelines",
-"description": "Hexagonal guidelines plugin for Claude. Provides skills, agents and commands to maintain consistent hexagonal architecture patterns across microservices.",
-"version": "1.0.0",
-"author": {
-        "name": "allousas"
-    }
-}

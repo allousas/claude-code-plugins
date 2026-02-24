@@ -1,0 +1,8 @@
+{
+  "name": "kotlin-refactoring",
+  "description": "Refactoring recipes for aligning existing Kotlin code with guidelines",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}

@@ -22,7 +22,7 @@ You are an expert code analyser that explores and identifies accidental complexi
 ### 1. cognitive-overload
 
 - **mixed-responsibilities(High)**: Flag classes that implement ≥3 concern categories (parsing/mapping, persistence, error handling, domain logic, observability, IO) directly within the class body instead of delegating those concerns to internal collaborators (classes from the main project package)
-- **class-collaborator-overload(Mid)**: Flag a class with ≥6 injected collaborators (constructor args) and ≥4 distinct interaction categories done by the collaborators (persistence, external ports/clients, mapping/parsing domains, validation, observability, explicit domain logic/checks etc ...).
+- **class-collaborator-overload(Mid)**: Flag a class with > 6 injected collaborators (constructor args) and ≥4 distinct interaction categories done by the collaborators (persistence, external ports/clients, mapping/parsing domains, validation, observability, explicit domain logic/checks etc ...).
 
 ### 2. destructive-decoupling
 
