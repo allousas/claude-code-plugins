@@ -7,7 +7,7 @@
     {
       "name": "security-vulnerabilities",
       "source": "./plugins/security-vulnerabilities",
-      "description": "Fixes Dependabot security alerts in GitHub repositories"
+      "description": "Commands that fix Dependabot security alerts in GitHub repositories"
     },
     {
       "name": "code-insights",
@@ -17,32 +17,32 @@
     {
       "name": "kotlin-architecture",
       "source": "./plugins/code-recipes/kotlin/architecture",
-      "description": "Architecture style skills (hexagonal, layered)"
+      "description": "Skills: Architecture style (hexagonal, layered)"
     },
     {
       "name": "kotlin-bootstrapping",
       "source": "./plugins/code-recipes/kotlin/bootstrapping",
-      "description": "New project scaffolding for Kotlin microservices"
+      "description": "Skills: New project scaffolding for Kotlin microservices"
     },
     {
       "name": "kotlin-building-blocks",
       "source": "./plugins/code-recipes/kotlin/building-blocks",
-      "description": "Implementation patterns for services, controllers, repositories, Kafka, integrations"
+      "description": "Skills: Implementation patterns for services, controllers, repositories, Kafka, integrations"
     },
     {
       "name": "kotlin-cross-cutting",
       "source": "./plugins/code-recipes/kotlin/cross-cutting",
-      "description": "Error handling, testing, migrations, configuration, code review"
+      "description": "Skills: Error handling, testing, migrations, configuration, code review"
     },
     {
       "name": "kotlin-patterns",
       "source": "./plugins/code-recipes/kotlin/patterns",
-      "description": "Domain events, optimistic locking, outbox pattern"
+      "description": "Skills: Domain events, optimistic locking, outbox pattern"
     },
     {
       "name": "kotlin-refactoring",
       "source": "./plugins/code-recipes/kotlin/refactoring",
-      "description": "Aligning existing code with guidelines"
+      "description": "Skills: Aligning existing code with guidelines"
     }
   ]
 }
