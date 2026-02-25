@@ -1,6 +1,6 @@
 ---
 name: implementing-kafka-consumers
-description: Apply when creating, refactoring, modifying, planning (plan mode) or reviewing any file that is a Kafka consumer, kafka message listener, or kafka event consumer. 
+description: Apply when creating, modifying, or reviewing any file that consumes from Kafka (classes annotated with @KafkaListener or with names containing in Consumer/Listener)
 ---
 
 ## Purpose

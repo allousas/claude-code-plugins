@@ -1,6 +1,6 @@
 ---
 name: implementing-service-integrations
-description: Apply when creating, refactoring, modifying, planning (plan mode) or reviewing any file that is an HTTP client, REST client adapter, that integrates with an external service. 
+description: Apply when creating, modifying, or reviewing any file that is an outbound HTTP client, REST client adapter, that integrates with an external service via sync http calls. 
 ---
 
 ## Purpose

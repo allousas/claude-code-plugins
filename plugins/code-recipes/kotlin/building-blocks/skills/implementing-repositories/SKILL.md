@@ -1,6 +1,6 @@
 ---
 name: implementing-repositories
-description: Apply when creating, refactoring, modifying, planning (plan mode) or reviewing any change in a file that implements a repository.
+description: Apply when creating, modifying, or reviewing any file that implements a repository (classes with names containing `Repository`, implementing an interface wich name contains `Repository`, or classes that abstract data access to a database, cache, or external storage)
 ---
 
 ## Purpose
