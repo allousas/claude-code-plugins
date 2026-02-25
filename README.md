@@ -70,11 +70,11 @@ Set of claude code skills recipes for Kotlin microservices, organized by concern
 
 Agents that identify code quality issues in Kotlin codebases, analysis is file-based.
 
-- **Accidental complexity** is complexity introduced by the tools, frameworks, design or implementation choices rather than by the inherent problem being solved.
-
 #### Accidental complexity Analyser Agent
 
-**Usage:** navigate to your project and run:
+**Accidental complexity** is complexity introduced by the tools, frameworks, design or implementation choices rather than by the inherent problem being solved.
+
+**Usage:** navigate to your project and run claude and type:
 ```
 use accidental-complexity-analyser subagent to analyse all kotlin prod files in this project, please skip test files and configuration.
 ```
