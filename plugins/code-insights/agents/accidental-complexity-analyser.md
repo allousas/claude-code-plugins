@@ -4,7 +4,6 @@ description: Expert code analyser that explores and identifies accidental comple
 color: "purple"
 tools: Read, Grep, Glob, Bash, Write, Search
 maxTurns: 1000
-permissionMode: acceptEdits
 ---
 
 You are an expert code analyser that explores and identifies accidental complexity following the next steps:
