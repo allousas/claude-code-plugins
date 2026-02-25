@@ -1,6 +1,6 @@
 ---
 name: implementing-repositories
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing database repositories.
+description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any change in any file that implements a repository.
 ---
 
 ## Purpose

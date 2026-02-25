@@ -1,6 +1,6 @@
 ---
 name: implementing-controllers
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing HTTP controllers.
+description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any file that is an HTTP controller, REST endpoint, API adapter, or global exception handler. This includes adding, modifying, or fixing request/response DTOs, status codes, route mappings, or error response handling.
 ---
 
 ## Purpose

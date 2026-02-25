@@ -1,6 +1,6 @@
 ---
 name: configuring-runtime-dependencies
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing Framework configuration and runtime wiring.
+description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any file that is a Spring configuration class, bean definition, dependency injection wiring, or configuration properties binding. This includes adding, modifying, or fixing @Configuration classes, @Bean methods, @ConfigurationProperties, or constructor injection setup.
 ---
 
 ## Purpose

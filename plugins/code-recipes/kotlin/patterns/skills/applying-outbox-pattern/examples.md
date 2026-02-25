@@ -19,6 +19,7 @@ CREATE INDEX idx_outbox_unpublished ON outbox (created_at) WHERE published = fal
 @Repository
 class PostgresOutboxRepository(private val jdbcTemplate: JdbcTemplate) {
 
+    @Transactional(propagation = Propagation.MANDATORY)
     fun store(entry: OutboxEntry) {
         jdbcTemplate.update(
             "INSERT INTO outbox (id, aggregate_id, event_type, payload, created_at) VALUES (?, ?, ?, ?::jsonb, ?)",
@@ -32,6 +33,7 @@ class PostgresOutboxRepository(private val jdbcTemplate: JdbcTemplate) {
             limit
         ) { rs, _ -> rs.asOutboxEntry() }
 
+    @Transactional(propagation = Propaga/exittion.MANDATORY)
     fun markAsPublished(ids: List<UUID>) {
         jdbcTemplate.update(
             "UPDATE outbox SET published = true WHERE id = ANY(?)",

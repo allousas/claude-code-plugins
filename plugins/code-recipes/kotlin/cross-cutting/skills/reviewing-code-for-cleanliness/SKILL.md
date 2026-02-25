@@ -1,6 +1,6 @@
 ---
 name: reviewing-code-for-cleanliness
-description: Apply only when reviewing any Kotlin code for readability and maintainability.
+description: Apply only when explicitly reviewing or auditing Kotlin code for readability, maintainability, or clean code practices. This includes code review requests, naming reviews, refactoring for clarity, reducing nesting, or evaluating scope function usage.
 ---
 
 ## Purpose

@@ -1,6 +1,6 @@
 ---
 name: applying-outbox-pattern
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing reliable event publishing with the transactional outbox pattern.
+description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any code that implements the transactional outbox pattern. This includes adding, modifying any outbox related files/classes but also when performing dual writes in the code base, specially in application service layer.
 ---
 
 ## Purpose
@@ -20,6 +20,7 @@ A separate process reads the outbox and publishes events to the message broker, 
 ## Guidelines
 
 **DO:**
+- Make sure that the application service or code that triggered the upper layer action os wrapped in a transaction
 - Store events in the outbox table within the same database transaction as the entity state change
 - Include `id`, `aggregate_id`, `event_type`, `payload` (JSON), `created_at`, and `published` flag in the outbox table
 - Use a separate scheduled poller or CDC (Change Data Capture) to read and publish events

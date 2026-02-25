@@ -1,6 +1,6 @@
 ---
 name: handling-errors-with-either
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing error handling using Arrow's Either type in any layer.
+description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any code that uses Arrow's Either type for error handling. This includes adding, modifying, or fixing Either return types, sealed error classes, either {} builders, .bind() calls, fold() mappings, or Left/Right handling in domain, application, or controller layers.
 ---
 
 ## Purpose

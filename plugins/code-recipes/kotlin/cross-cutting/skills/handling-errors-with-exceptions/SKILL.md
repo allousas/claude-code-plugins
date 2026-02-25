@@ -1,6 +1,6 @@
 ---
 name: handling-errors-with-exceptions
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing error handling using exceptions in any layer.
+description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any code that handles errors using exceptions. This includes adding, modifying, or fixing custom exception classes, DomainException hierarchies, GlobalExceptionHandler, @ExceptionHandler methods, exception propagation, or error code mappings.
 ---
 
 ## Purpose

@@ -1,6 +1,6 @@
 ---
 name: writing-tests
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing tests in any layer.
+description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any test file or test class. This includes adding, modifying, or fixing unit tests, integration tests, component tests, test fixtures, mocking setup (mockk), assertions (kotest), TestContainers configuration, WireMock stubs, or @WebMvcTest/@SpringBootTest setups.
 ---
 
 ## Purpose
