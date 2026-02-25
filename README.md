@@ -13,36 +13,6 @@ A collection of Claude Code plugins to enhance development workflows with AI-pow
 
 ## Plugins
 
-### Security Vulnerabilities
-
-Fixes Dependabot security alerts in GitHub repositories.
-
-```bash
-export GITHUB_DEPENDABOT_PAT="your-token"  # needs dependabot-* scopes
-```
-
-| Command | Description |
-|---------|-------------|
-| `/security-vulnerabilities:list-dependabot-alerts` | List all open alerts |
-| `/security-vulnerabilities:fix-dependabot-alert 123` | Fix a specific alert |
-| `/security-vulnerabilities:fix-all-dependabot-alerts` | Fix all open alerts |
-
-### Code Insights
-
-Agents that identify accidental complexity and code quality issues in Kotlin codebases.
-
-**Usage:** navigate to your project and run:
-```
-use accidental-complexity-analyser subagent to analyse all kotlin prod files in this project, please skip test files and configuration.
-```
-
-**Output:**
-
-| File | Description |
-|------|-------------|
-| `accidental-complexity-findings.jsonl` | Line-by-line findings with pattern IDs |
-| `accidental-complexity-report-[YYYY-MM-DD].md` | Summary with top patterns and statistics |
-
 ### Code Recipes — Kotlin
 
 Set of claude code skills recipes for Kotlin microservices, organized by concern. Skills are auto-loaded by Claude when relevant to the current task.
@@ -95,6 +65,36 @@ Set of claude code skills recipes for Kotlin microservices, organized by concern
 | Skill | Description | Triggered when |
 |-------|-------------|----------------|
 | aligning-existing-code-with-guidelines | Asks before overriding existing codebase patterns | Loaded skills conflict with existing code style |
+
+### Security Vulnerabilities
+
+Fixes Dependabot security alerts in GitHub repositories.
+
+```bash
+export GITHUB_DEPENDABOT_PAT="your-token"  # needs dependabot-* scopes
+```
+
+| Command | Description |
+|---------|-------------|
+| `/security-vulnerabilities:list-dependabot-alerts` | List all open alerts |
+| `/security-vulnerabilities:fix-dependabot-alert 123` | Fix a specific alert |
+| `/security-vulnerabilities:fix-all-dependabot-alerts` | Fix all open alerts |
+
+### Code Insights
+
+Agents that identify accidental complexity and code quality issues in Kotlin codebases.
+
+**Usage:** navigate to your project and run:
+```
+use accidental-complexity-analyser subagent to analyse all kotlin prod files in this project, please skip test files and configuration.
+```
+
+**Output:**
+
+| File | Description |
+|------|-------------|
+| `accidental-complexity-findings.jsonl` | Line-by-line findings with pattern IDs |
+| `accidental-complexity-report-[YYYY-MM-DD].md` | Summary with top patterns and statistics |
 
 ## Customizations
 
