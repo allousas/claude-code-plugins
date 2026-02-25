@@ -1,6 +1,6 @@
 ---
 name: implementing-application-services
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any file that is an application service, use case, command handler, or query handler in the services layer. 
+description: Apply when creating, modifying, or reviewing any file any that is an application service, use case, command handler, or query handler in the services layer. 
 ---
 
 ## Purpose
