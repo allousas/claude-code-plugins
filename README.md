@@ -66,7 +66,7 @@ Set of claude code skills recipes for Kotlin microservices, organized by concern
 |-------|-------------|----------------|
 | aligning-existing-code-with-guidelines | Asks before overriding existing codebase patterns | Loaded skills conflict with existing code style |
 
-### Code Insights
+### Code Insights (`code-insights`)
 
 Agents that identify code quality issues in Kotlin codebases, analysis is file-based.
 
@@ -86,7 +86,7 @@ use accidental-complexity-analyser subagent to analyse all kotlin prod files in 
 | `accidental-complexity-findings.jsonl` | Line-by-line findings with pattern IDs |
 | `accidental-complexity-report-[YYYY-MM-DD].md` | Summary with top patterns and statistics |
 
-### Security Vulnerabilities
+### Security Vulnerabilities (`security-vulnerabilities`)
 
 Fixes Dependabot security alerts in GitHub repositories.
 
