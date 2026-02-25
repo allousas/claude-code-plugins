@@ -1,7 +1,7 @@
 {
   "name": "code-insights",
   "description": "Set of agents that identify accidental complexity patterns and code quality issues in Kotlin codebases",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "allousas"
   }
