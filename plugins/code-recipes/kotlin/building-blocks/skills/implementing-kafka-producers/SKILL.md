@@ -1,6 +1,6 @@
 ---
 name: implementing-kafka-producers
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any file that is a Kafka producer, message publisher, or event publisher to a Kafka topic. This includes adding, modifying, or fixing event serialization, topic publishing, producer error handling, or KafkaTemplate usage.
+description: Apply when creating, refactoring, modifying, planning (plan mode) or reviewing any file that is a Kafka producer, kafka message publisher, or kafka event publisher to a Kafka topic. 
 ---
 
 ## Purpose

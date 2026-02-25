@@ -1,6 +1,6 @@
 ---
 name: versioning-database-schema
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any Flyway migration file, SQL schema change, or database table modification. This includes adding, modifying, or fixing migration scripts (V*__.sql), CREATE TABLE statements, ALTER TABLE statements, index creation, column additions, or db/migration/ files.
+description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any Flyway migration file, SQL schema change, or database table modification.
 ---
 
 ## Purpose

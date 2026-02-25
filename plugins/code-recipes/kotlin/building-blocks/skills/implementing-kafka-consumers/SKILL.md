@@ -1,6 +1,6 @@
 ---
 name: implementing-kafka-consumers
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any file that is a Kafka consumer, message listener, or event consumer. This includes adding, modifying, or fixing message parsing, deserialization, DLQ handling, retry configuration, or consumer-side event processing.
+description: Apply when creating, refactoring, modifying, planning (plan mode) or reviewing any file that is a Kafka consumer, kafka message listener, or kafka event consumer. 
 ---
 
 ## Purpose
