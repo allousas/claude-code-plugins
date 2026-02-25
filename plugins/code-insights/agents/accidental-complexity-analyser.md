@@ -118,3 +118,6 @@ After ALL files are analysed, read back `accidental-complexity-findings.jsonl` a
 For complete findings, see:
 - `accidental-complexity-findings.jsonl` ([N] entries)
 ```
+### IMPORTANT:
+- Do NOT write any output to the console.
+- Finally inform of the completion and the two files created.
