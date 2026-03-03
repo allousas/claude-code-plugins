@@ -18,9 +18,11 @@ You are an expert code analyser that explores and identifies accidental complexi
 
 ## Checks by category (Severity: High, Mid, Low):
 
+Skip configurations classes from any analysis (*Config.kt, or placed in .config/ or configuration/ folders/packages).
+
 ### 1. cognitive-overload
 
-- **mixed-responsibilities(High)**: Flag classes that implement ≥3 concern categories (parsing/mapping, persistence, error handling, domain logic, observability, IO) directly within the class body instead of delegating those concerns to internal collaborators (classes from the main project package)
+- **mixed-responsibilities(High)**: Flag methods that implement ≥3 concern categories (parsing/mapping, persistence, error handling, domain logic, observability, IO) directly within the class body instead of delegating those concerns to internal collaborators (classes from the main project package)
 - **class-collaborator-overload(Mid)**: Flag a class with > 6 injected collaborators (constructor args) and ≥4 distinct interaction categories done by the collaborators (persistence, external ports/clients, mapping/parsing domains, validation, observability, explicit domain logic/checks etc ...).
 
 ### 2. destructive-decoupling
@@ -33,12 +35,12 @@ You are an expert code analyser that explores and identifies accidental complexi
 - **unused-wrapper-forward(Mid)**: Method signature exposes a lib wrapper type (Either, Flow, Flux ...) but performs operations and forwards/returns it unchanged.
 - **suspend-without-suspension(High):** Function is marked suspend but performs zero suspension or async operations (no await, no suspension primitives, no context switches, no async terminal calls)
 - **meaningless-error-abstraction(High)**: Method signatures expose library-error abstractions with generic error types (Error, DomainError, AppError, Exception).
-- **library-dominated-expression(Mid)**: Expressions where ≥3 chained calls and ≥70% of method invocations are library-specific, obscuring real logic.
+- **library-dominated-expression(Mid)**: In service or domain layers, flag expressions with ≥3 chained external calls where no project-owned method is invoked and the expression contributes to business logic (i.e., not bean construction, configuration, controllers, adapter code ...).
 - **orm-overhead-for-simple-query(High)**: ORM or data-access framework usage when simple queries (≤1 join) require ≥2 framework-specific classes or generated code.
 
 ### 4. unnecessary-indirection
 
-- **service-to-service-dependency(High)**: Flag any dependency where one service/use-case class injects, calls, or otherwise depends on another service/use-case class.
+- **service-to-service-dependency(High)**: Flag any dependency where one service/use-case class injects, calls, or otherwise depends on another service/use-case class. Only flag direct dependencies between service/use-case classes in the application service layer.
 - **private-call-depth(Mid)**:Flag when a public (non-private) method calls a private method that itself calls another private method within the same class (call depth: public → private → private, depth ≥ 3)
 - **pass-through-method(Low)**: Pass-through methods with 1 forwarded call, 0 branching, and no value transformation.
 
@@ -86,9 +88,9 @@ After ALL files are analysed, read back `accidental-complexity-findings.jsonl` a
 **Accidental Complexity Score**: [S] / 10
 > Weighted Density: [W] weighted findings per 1k LOC
 > Formula:
-> WeightedTotal = (Low × 0.2) + (Medium × 0.7) + (High × 1.5)
+> WeightedTotal = (Low × 1) + (Medium × 2) + (High × 4)
 > WeightedDensity = WeightedTotal / (LOC / 1000)
-> Score = min(10, round(log₂(WeightedDensity + 1), 1))
+> Score = min(10, round(log₁.₅(WeightedDensity + 1), 1))
 > Higher score means more accidental complexity. Log scaling prevents small services from being over-penalized.
 
 ---
