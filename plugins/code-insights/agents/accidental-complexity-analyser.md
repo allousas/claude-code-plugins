@@ -63,6 +63,11 @@ Skip configurations classes from any analysis (*Config.kt, or placed in .config/
 - **excessive-noisy-logging(Mid)**: Flag execution paths with excessive logging density (e.g., ≥3 log statements with ≤1 decision point) or logs placed around nearly every step.
 - **side-effects-in-domain(High)**: Domain model methods with state mutation ≥1, side effects ≥1, and non-void return type.
 
+### 8. architectural-boundary-violation
+
+- **infra-dto-leak(High)**: Flag when a DTO or data structure defined in infrastructure/adapter/web/persistence packages is used as a parameter, return type, field, or constructor argument in service, use-case, or domain classes.
+- **domain-model-exposure(Low):** Flag when classes from domain model are directly exposed as return types from service layer to inbound adapters (controllers, kafka consumers, ...) without mapping to a dedicated response model or DTO.
+
 ## Write findings to JSONL
 
 - After each batch, IMMEDIATELY append findings to `accidental-complexity-findings.jsonl`. Do NOT wait until all batches are done.
