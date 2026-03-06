@@ -15,15 +15,25 @@ You are an expert code analyser that explores and identifies accidental complexi
 # Step 2: Analyze Files in batches
 
 - In batches of 5 files, use the following pattern definitions to analyze each file line by line. 
+- Ensure that every file is checked against all patterns.
 
 ## Checks by category (Severity: High, Mid, Low):
 
+#### Preconditions
 Skip configurations classes from any analysis (*Config.kt, or placed in .config/ or configuration/ folders/packages).
+
+##### Layer definitions
+- **{domain}**: Classes located in packages that primarily represent business concepts, commonly including segments such as domain, model, entity ... classes belonging to domain.
+- **{application-service}**: Classes located in packages that represent use-case-orchestration/application-services, commonly including in service, usecase, application or similar coordination-focused naming.
+- **{infrastructure}**: Infrastructure classes such as repositories, data-access, controllers, adapters, gateways, http clients, stream consumers, schedulers, etc. Usually located in packages that are not part of the domain or application-service layer.
+
+#### Checks
 
 ### 1. cognitive-overload
 
 - **mixed-responsibilities(High)**: Flag methods that implement ≥3 concern categories (parsing/mapping, persistence, error handling, domain logic, observability, IO) directly within the class body instead of delegating those concerns to internal collaborators (classes from the main project package)
 - **class-collaborator-overload(Mid)**: Flag a class with > 6 injected collaborators (constructor args) and ≥4 distinct interaction categories done by the collaborators (persistence, external ports/clients, mapping/parsing domains, validation, observability, explicit domain logic/checks etc ...).
+- **god-object (High)**: Flag classes with ≥500 LOC AND ≥10 public methods, indicating excessive responsibilities concentrated in one class.
 
 ### 2. destructive-decoupling
 
@@ -34,13 +44,13 @@ Skip configurations classes from any analysis (*Config.kt, or placed in .config/
 
 - **unused-wrapper-forward(Mid)**: Method signature exposes a lib wrapper type (Either, Flow, Flux ...) but performs operations and forwards/returns it unchanged.
 - **suspend-without-suspension(High):** Function is marked suspend but performs zero suspension or async operations (no await, no suspension primitives, no context switches, no async terminal calls)
-- **meaningless-error-abstraction(High)**: Method signatures expose library-error abstractions with generic error types (Error, DomainError, AppError, Exception).
-- **library-dominated-expression(Mid)**: In service or domain layers, flag expressions with ≥3 chained external calls where no project-owned method is invoked and the expression contributes to business logic (i.e., not bean construction, configuration, controllers, adapter code ...).
-- **orm-overhead-for-simple-query(High)**: ORM or data-access framework usage when simple queries (≤1 join) require ≥2 framework-specific classes or generated code.
+- **generic-either(High):** Flag when a public function in the {domain} or {application-service} layers returns Either<DomainError, *>, Either<AppError, *>, or any non–use-case-specific shared error type as the left channel, instead of a use-case-scoped error hierarchy.
+- **library-dominated-expression(Mid)**: In {domain} or {application-service} layers only (exclude {infrastructure}), flag expressions contributing to business decision logic that contain ≥3 chained calls to external library APIs without invoking project-owned methods.
+- **orm-overhead-for-simple-query(Mid)**: ORM or data-access framework usage when simple queries (≤1 join) require ≥2 framework-specific classes or generated code.
 
 ### 4. unnecessary-indirection
 
-- **service-to-service-dependency(High)**: Flag any dependency where one service/use-case class injects, calls, or otherwise depends on another service/use-case class. Only flag direct dependencies between service/use-case classes in the application service layer.
+- **service-to-service-dependency(High)**: Flag any dependency where one class in {application-service}, calls, or otherwise depends on another {application-service} class. Only flag direct dependencies between {application-service} layer.
 - **private-call-depth(Mid)**:Flag when a public (non-private) method calls a private method that itself calls another private method within the same class (call depth: public → private → private, depth ≥ 3)
 - **pass-through-method(Low)**: Pass-through methods with 1 forwarded call, 0 branching, and no value transformation.
 
@@ -61,12 +71,14 @@ Skip configurations classes from any analysis (*Config.kt, or placed in .config/
 
 - **redundant-log-and-rethrow(Low)**: Catch blocks that log an exception and rethrow it while adding 0 new context.
 - **excessive-noisy-logging(Mid)**: Flag execution paths with excessive logging density (e.g., ≥3 log statements with ≤1 decision point) or logs placed around nearly every step.
-- **side-effects-in-domain(High)**: Domain model methods with state mutation ≥1, side effects ≥1, and non-void return type.
+- **side-effects-in-domain(High)**: {domain} classes methods with state mutation ≥1, side effects ≥1, and non-void return type.
+- **generic-exception-usage(Mid)**: Flag when code in the {application-service} layer throws or catches overly broad exception types such as Exception, Throwable, RuntimeException, or Error instead of use-case-specific exceptions.
 
 ### 8. architectural-boundary-violation
 
-- **infra-dto-leak(High)**: Flag when a DTO or data structure defined in infrastructure/adapter/web/persistence packages is used as a parameter, return type, field, or constructor argument in service, use-case, or domain classes.
-- **domain-model-exposure(Low):** Flag when classes from domain model are directly exposed as return types from service layer to inbound adapters (controllers, kafka consumers, ...) without mapping to a dedicated response model or DTO.
+- **infra-type-leaking-outside(High)**: Flag when classes in {infrastructure} expose data wrappers (dtos from db or external services) defined in {infrastructure} or external transport layers (proto, classes outside our packages) as public method return types or parameters intended for use outside the layer, excluding mapper/converter classes.
+- **service-uses-infra-types(High)**: Flag when service classes in {application-service} use data wrappers (dtos from http) defined in {infrastructure} OR external transport layers (proto, classes outside our packages) as method parameters or return types, excluding mapper/converter classes.
+- **domain-model-exposure(Low):** Flag when classes from {domain} are directly exposed as return types from {application-service} to {infrastructure} without mapping to a dedicated response model or DTO.
 
 ## Write findings to JSONL
 
@@ -76,11 +88,11 @@ Skip configurations classes from any analysis (*Config.kt, or placed in .config/
 ```jsonl
  {"id": "AC-001", "pattern": "framework-lib-tax", "file": "src/services/UserService.kt:23", "issue": "suspend function with no async operations", "LOC": 120, "severity": "High", "category": "framework-lib-tax"}
 ```
-- Keep a running tally of: total files analysed, total LOC, finding counts by severity and category. Do NOT store full findings in memory — they are already persisted in the JSONL file.
+- Keep a running tally of: total files analyzed. Do NOT store full findings in memory — they are already persisted in the JSONL file.
 
 # Step 3: Final Report
 
-After ALL files are analysed, read back `accidental-complexity-findings.jsonl` and use it to compute the summary statistics. Then write `accidental-complexity-report-[YYYY-MM-DD].md` **in this exact format, nothing else**:
+After ALL files are analyzed, read back `accidental-complexity-findings.jsonl` and use it to compute the summary statistics. Then write `accidental-complexity-report-[YYYY-MM-DD].md` **in this exact format, nothing else**:
 
 ```
 # Accidental Complexity Assessment
@@ -91,12 +103,12 @@ After ALL files are analysed, read back `accidental-complexity-findings.jsonl` a
 **Total Lines of Code Analyzed**: [Y]
 **Total Findings**: [Y -> from_accidental-complexity-findings.jsonl]
 **Accidental Complexity Score**: [S] / 10
-> Weighted Density: [W] weighted findings per 1k LOC
+> Weighted Density: [D] weighted findings per 1k LOC
 > Formula:
 > WeightedTotal = (Low × 1) + (Medium × 2) + (High × 4)
 > WeightedDensity = WeightedTotal / (LOC / 1000)
-> Score = min(10, round(log₁.₅(WeightedDensity + 1), 1))
-> Higher score means more accidental complexity. Log scaling prevents small services from being over-penalized.
+> Score = min(10, round(10 × WeightedDensity / (WeightedDensity + 10), 1))
+> Density-based: fair across project sizes. Saturating curve: scores spread across the full 0–10 range (5 at density 10, ~7 at density 25, 9+ only at extreme density).
 
 ---
 
@@ -127,4 +139,4 @@ For complete findings, see:
 ```
 ### IMPORTANT:
 - Do NOT write any output to the console.
-- Finally inform of the completion and the two files created.
+- Finally, inform of the completion and the two files are created.
