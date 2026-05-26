@@ -26,6 +26,11 @@ inbound infra adapters → application → domain ← outbound infra adapters
 - Inbound infra adapters depend on application and domain
 - Outbound infra adapters depend on application and domain ports 
 
+### Dependency Rule Exceptions
+
+- **Infra inbound → Infra outbound (skipping application layer and ports):** when infrastructure needs to communicate with other infrastructure, it can skip ports and use direct communication between them, e.g. a consumer of kafka calling repository impl of a database. This is a pragmatic shortcut that avoids unnecessary indirection when the communication is purely technical and doesn't involve business logic.
+- **Infra outbound → Infra outbound:** when one infrastructure component needs to call another (e.g., an HTTP client calling another service), it can depend directly without going through the domain or application layers, as this is purely technical communication.
+
 ## package Structure
 
 ### DDD style
@@ -53,10 +58,13 @@ src/main/kotlin/<company-package>/
     └── config/      # Spring configuration
 ```
 
-Allow any other structure as long as it is consistent and logical to hexagonal architecture.
+### Package Structure Violations
+
+- Any folder that does not exist in the structures above is a violation. No extra layers, renamed folders, or intermediate packages are allowed.
+- New packages are allowed only on top of existing packages.
 
 ### Pragmatic: hexagonal shortcuts
-This approach intentionally simplifies classical hexagonal architecture:
+These **shortcuts are allowed**, they intentionally simplify classical hexagonal architecture:
 - **No explicit port interfaces for inbound adapters** — controllers and other inbound adapters call application services directly
 - **Framework annotations in the application layer are acceptable** when they reduce boilerplate without leaking framework logic (`@Transactional`, `@Service`)
 - **Leak domain to infrastructure** — domain model can be used in inbound and outbound adapters, we don't need to create separate DTOs for translation if the domain model is already suitable for that purpose
