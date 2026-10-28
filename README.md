@@ -7,30 +7,30 @@ A collection of Claude Code plugins to enhance development workflows with AI-pow
 ## Installation
 
 ```shell
-/plugin marketplace add allousas/claude-code-plugins
+/plugin marketplace add allousas/claude-code-e
 /plugin install <plugin-name>
 ```
 
 ## Plugins
 
-### Code Recipes — Kotlin
+### Code Recipes
 
-Set of claude code skills recipes for Kotlin microservices, organized by concern. Skills are auto-loaded by Claude when relevant to the current task.
+Set of language-agnostic claude code skill recipes for microservices, organized by concern. Each skill's `SKILL.md` holds the guidelines; `kotlin-examples.md` (Kotlin + Spring) and `typescript-examples.md` (TypeScript + NestJS) next to it hold the code examples. Skills are auto-loaded by Claude when relevant to the current task.
 
-#### Architecture (`kotlin-architecture`)
+#### Architecture (`architecture`)
 
 | Skill | Description | Triggered when |
 |-------|-------------|----------------|
 | applying-pragmatic-hexagonal | Hexagonal architecture with pragmatic shortcuts | Designing or reviewing project structure |
 | applying-pragmatic-layered | Layered architecture style | Designing or reviewing project structure |
 
-#### Bootstrapping (`kotlin-bootstrapping`)
+#### Bootstrapping (`bootstrapping`)
 
 | Skill | Description | Triggered when |
 |-------|-------------|----------------|
 | setting-up-a-new-project | Bootstrap with default tech stack and hexagonal structure | Creating a new microservice from scratch |
 
-#### Building Blocks (`kotlin-building-blocks`)
+#### Building Blocks (`building-blocks`)
 
 | Skill | Description | Triggered when |
 |-------|-------------|----------------|
@@ -40,19 +40,21 @@ Set of claude code skills recipes for Kotlin microservices, organized by concern
 | implementing-kafka-producers | Kafka message producers | Creating or changing Kafka producers |
 | implementing-repositories | Database repositories (outbound adapters) | Creating or changing repositories |
 | implementing-service-integrations | External service integrations (outbound HTTP) | Creating or changing HTTP clients |
+| implementing-rich-domain | Entities, value objects, aggregates and invariants | Creating or changing domain code |
+| implementing-query-handlers | Read-only use cases separated from commands | Creating or changing query handlers |
 
-#### Cross-Cutting (`kotlin-cross-cutting`)
+#### Cross-Cutting (`cross-cutting`)
 
 | Skill | Description | Triggered when |
 |-------|-------------|----------------|
-| configuring-runtime-dependencies | Spring configuration and dependency wiring | Setting up Spring beans and config |
-| handling-errors-with-either | Functional error handling with Arrow's Either | Implementing error handling with Either |
+| configuring-runtime-dependencies | Framework configuration and dependency wiring | Setting up DI, modules, beans and config |
+| handling-errors-with-either | Functional error handling with Either/Result types | Implementing error handling with Either |
 | handling-errors-with-exceptions | Exception-based error handling | Implementing error handling with exceptions |
 | reviewing-code-for-cleanliness | Code cleanliness review checklist | Reviewing code quality |
-| versioning-database-schema | Flyway database migrations | Creating or changing database schema |
+| versioning-database-schema | Database migrations (Flyway, dbmate, ...) | Creating or changing database schema |
 | writing-tests | Testing guidelines and patterns | Writing unit, integration, or component tests |
 
-#### Patterns (`kotlin-patterns`)
+#### Patterns (`patterns`)
 
 | Skill | Description | Triggered when |
 |-------|-------------|----------------|
@@ -60,11 +62,12 @@ Set of claude code skills recipes for Kotlin microservices, organized by concern
 | applying-optimistic-locking | Optimistic locking for concurrent access | Implementing concurrency control |
 | applying-outbox-pattern | Transactional outbox for reliable event publishing | Implementing reliable messaging |
 
-#### Refactoring (`kotlin-refactoring`)
+#### Refactoring (`refactoring`)
 
 | Skill | Description | Triggered when |
 |-------|-------------|----------------|
 | aligning-existing-code-with-guidelines | Asks before overriding existing codebase patterns | Loaded skills conflict with existing code style |
+
 
 ### Code Insights (`code-insights`)
 

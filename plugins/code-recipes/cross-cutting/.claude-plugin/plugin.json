@@ -1,0 +1,8 @@
+{
+  "name": "cross-cutting",
+  "description": "Language-agnostic cross-cutting concerns for microservices (error handling, testing, database schema, configuration, code review) with Kotlin/Spring and TypeScript/NestJS examples",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}

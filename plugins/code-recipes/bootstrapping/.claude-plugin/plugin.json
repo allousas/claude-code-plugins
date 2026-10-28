@@ -1,0 +1,8 @@
+{
+  "name": "bootstrapping",
+  "description": "Project bootstrapping skills for new microservices (Kotlin/Spring Boot or TypeScript/NestJS)",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}

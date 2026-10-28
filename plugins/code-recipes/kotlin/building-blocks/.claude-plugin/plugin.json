@@ -1,8 +1,0 @@
-{
-  "name": "kotlin-building-blocks",
-  "description": "Implementation patterns for Kotlin architectural components (services, controllers, repositories, Kafka, integrations)",
-  "version": "1.0.0",
-  "author": {
-    "name": "allousas"
-  }
-}

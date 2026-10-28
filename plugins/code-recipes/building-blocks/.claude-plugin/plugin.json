@@ -1,0 +1,8 @@
+{
+  "name": "building-blocks",
+  "description": "Language-agnostic implementation patterns for architectural components (rich domain, application services, query handlers, controllers, repositories, Kafka consumers/producers, service integrations) with Kotlin and TypeScript examples",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}

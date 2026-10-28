@@ -15,33 +15,33 @@
       "description": "Agents that identify accidental complexity and code quality issues"
     },
     {
-      "name": "kotlin-architecture",
-      "source": "./plugins/code-recipes/kotlin/architecture",
+      "name": "architecture",
+      "source": "./plugins/code-recipes/architecture",
       "description": "Skills: Architecture style (hexagonal, layered)"
     },
     {
-      "name": "kotlin-bootstrapping",
-      "source": "./plugins/code-recipes/kotlin/bootstrapping",
-      "description": "Skills: New project scaffolding for Kotlin microservices"
+      "name": "bootstrapping",
+      "source": "./plugins/code-recipes/bootstrapping",
+      "description": "Skills: New project scaffolding for microservices"
     },
     {
-      "name": "kotlin-building-blocks",
-      "source": "./plugins/code-recipes/kotlin/building-blocks",
-      "description": "Skills: Implementation patterns for services, controllers, repositories, Kafka, integrations"
+      "name": "building-blocks",
+      "source": "./plugins/code-recipes/building-blocks",
+      "description": "Skills: Implementation patterns for domain, use cases, queries, controllers, repositories, Kafka, integrations"
     },
     {
-      "name": "kotlin-cross-cutting",
-      "source": "./plugins/code-recipes/kotlin/cross-cutting",
+      "name": "cross-cutting",
+      "source": "./plugins/code-recipes/cross-cutting",
       "description": "Skills: Error handling, testing, migrations, configuration, code review"
     },
     {
-      "name": "kotlin-patterns",
-      "source": "./plugins/code-recipes/kotlin/patterns",
+      "name": "patterns",
+      "source": "./plugins/code-recipes/patterns",
       "description": "Skills: Domain events, optimistic locking, outbox pattern"
     },
     {
-      "name": "kotlin-refactoring",
-      "source": "./plugins/code-recipes/kotlin/refactoring",
+      "name": "refactoring",
+      "source": "./plugins/code-recipes/refactoring",
       "description": "Skills: Aligning existing code with guidelines"
     }
   ]

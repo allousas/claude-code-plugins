@@ -1,0 +1,8 @@
+{
+  "name": "architecture",
+  "description": "Language-agnostic architecture style skills for microservices (hexagonal, layered), with Kotlin and TypeScript layouts",
+  "version": "1.0.0",
+  "author": {
+    "name": "allousas"
+  }
+}
