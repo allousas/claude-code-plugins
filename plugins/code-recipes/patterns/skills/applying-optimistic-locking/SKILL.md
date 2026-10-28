@@ -1,6 +1,6 @@
 ---
 name: applying-optimistic-locking
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing repository methods that save entities with optimistic locking - version fields/columns, version checks in UPDATE or upsert statements, OptimisticLockingException, concurrent modification and lost updates (JDBC, Kysely or any SQL access).
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing a repository save of a versioned entity, or when the user asks about concurrent modifications, lost updates or concurrency control. Covers version fields and columns, version checks in UPDATE or upsert statements, and raising an optimistic locking exception on conflicts. Do not write versioned save logic directly - use this skill first.
 ---
 
 ## Purpose

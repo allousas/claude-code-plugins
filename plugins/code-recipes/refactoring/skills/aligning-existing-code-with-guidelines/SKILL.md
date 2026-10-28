@@ -1,6 +1,6 @@
 ---
 name: aligning-existing-code-with-guidelines
-description: Apply when applying (or planning) changes and existing codebase patterns conflict or differ from any loaded claude skill code patterns. Always ask the user whether to follow the skill recommendations or maintain consistency with existing code.
+description: ALWAYS invoke this skill when applying or planning changes and the existing codebase patterns differ from the patterns in any loaded skill. Ask the user whether to follow the skill recommendations or keep consistency with the existing code. Do not silently pick one side - use this skill first.
 ---
 
 ## Purpose

@@ -1,6 +1,6 @@
 ---
 name: applying-domain-event-publisher
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing domain event publishing - DomainEventPublisher ports, in-memory event dispatchers, in-process event handlers/subscribers (logging, metrics, in-process bus), and their wiring in Spring or NestJS.
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that publishes or reacts to domain events, or when the user asks about domain events. Covers the domain event publisher port, in-memory publishers, in-process subscribers for logging and metrics, and their wiring. For reliable delivery to a broker use applying-outbox-pattern. Do not write event publishing code directly - use this skill first.
 ---
 ## What it is
 A pattern that introduces an abstraction for publishing domain events, allowing the domain or application layer to emit events without depending on messaging infrastructure.

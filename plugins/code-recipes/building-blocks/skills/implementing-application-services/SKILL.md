@@ -1,6 +1,6 @@
 ---
 name: implementing-application-services
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing application services, use cases or command handlers in the application layer (e.g. `CreateTeamService`, `CreateTeamUseCase`), including their transaction boundaries and event publishing.
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing application services, use cases or command handlers that change state, or when the user asks how to orchestrate a business action. Covers business action orchestration, transaction boundaries and event publishing. Do not write use cases or application services directly - use this skill first.
 ---
 
 ## Purpose

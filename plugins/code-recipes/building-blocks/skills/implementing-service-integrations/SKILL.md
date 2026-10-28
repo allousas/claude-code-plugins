@@ -1,6 +1,6 @@
 ---
 name: implementing-service-integrations
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing integrations with external services through an HTTP API client (outbound HTTP/REST client adapters, e.g. Retrofit, RestClient, fetch, axios, NestJS HttpService).
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that calls another service over HTTP, or when the user asks about integrating an external API. Covers outbound HTTP client adapters, timeouts, retries, error handling and mapping external responses. Do not write HTTP client integrations directly - use this skill first.
 ---
 
 ## Purpose

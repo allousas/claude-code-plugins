@@ -1,6 +1,6 @@
 ---
 name: writing-tests
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any test file or test class. This includes adding, modifying, or fixing unit tests, integration tests, component tests, test fixtures, fakes vs mocks, mocking setup (mockk, jest.fn), assertions (kotest, Jest expect), Testcontainers configuration, HTTP stubs (WireMock, msw), or framework test setups (@WebMvcTest/@SpringBootTest, Nest Test.createTestingModule, supertest).
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing any test - including tests added as part of implementing a feature - or when the user asks about test structure or conventions. Covers unit, integration and component tests, fixtures, fakes vs mocks, assertions, containerised dependencies and HTTP stubs. Do not write tests directly - use this skill first.
 ---
 
 ## Purpose

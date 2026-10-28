@@ -1,6 +1,6 @@
 ---
 name: configuring-runtime-dependencies
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing framework configuration and runtime wiring. This includes dependency injection, configuration classes / modules, bean or provider definitions (Spring @Configuration/@Bean, NestJS @Module/providers), binding ports to adapters, injection tokens, configuration properties binding, and registering global pipes, filters or interceptors.
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing framework configuration or dependency injection wiring, or when the user asks about DI or configuration. Covers configuration classes and modules, bean or provider definitions, binding ports to adapters, injection tokens, configuration properties and environment variables, and global filters or interceptors. Do not wire modules or configure DI directly - use this skill first.
 ---
 
 ## Purpose

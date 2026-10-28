@@ -1,6 +1,6 @@
 ---
 name: implementing-repositories
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing database repositories, data access layers, persistence and entity mapping (classes named or implementing `*Repository`, or abstracting access to a database or external storage).
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing database repositories or any persistence code, or when the user asks how to save or load domain objects. Covers SQL queries, entity-to-row mapping and adapters over a database or external storage. Do not write repository classes directly - use this skill first.
 ---
 
 ## Purpose

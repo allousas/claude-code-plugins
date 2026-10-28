@@ -1,6 +1,6 @@
 ---
 name: handling-errors-with-exceptions
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any code that throws, catches, or defines errors using exceptions. This includes adding, modifying, or fixing custom exception/error classes, DomainException or InfrastructureException hierarchies, global exception handlers / exception filters (GlobalExceptionHandler, @ControllerAdvice, @Catch filters), exception propagation, error-to-response mapping, or error code mappings.
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that throws, catches or defines errors, or when the user asks how to model, propagate or map failures. Covers domain and infrastructure exception hierarchies, propagation, the global exception handler, error-to-response and error-code mapping, and promoting hot exceptions to result types. The default unless the project or operation uses Either/Result. Do not write error-handling code directly - use this skill first.
 ---
 
 ## Purpose

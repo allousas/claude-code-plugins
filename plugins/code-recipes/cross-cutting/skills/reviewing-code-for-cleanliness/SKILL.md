@@ -1,6 +1,6 @@
 ---
 name: reviewing-code-for-cleanliness
-description: Apply only when explicitly reviewing or auditing code for readability, maintainability, or clean code practices. This includes code review requests, naming reviews, refactoring for clarity, reducing nesting, function size, comments, immutability, or evaluating idiomatic constructs (e.g. Kotlin scope functions, TypeScript promise chains).
+description: ALWAYS invoke this skill when, and ONLY when, the user explicitly asks to review or audit code for readability, maintainability or clean code. Covers naming, nesting, function size, comments, immutability and idiomatic language constructs. Do not use it for regular implementation work.
 ---
 
 ## Purpose

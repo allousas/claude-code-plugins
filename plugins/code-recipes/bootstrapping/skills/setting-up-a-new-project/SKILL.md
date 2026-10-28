@@ -1,6 +1,6 @@
 ---
 name: setting-up-a-new-project
-description: Apply when bootstrapping a new microservice project from scratch (e.g. Kotlin/Spring Boot with Gradle, or TypeScript/NestJS with pnpm). Always confirm the language, default tech stack and architecture with the user before generating any code.
+description: ALWAYS invoke this skill when the user asks to create, scaffold or bootstrap a new microservice or project from scratch, or asks about the default tech stack, build setup or initial project structure. Confirm the language, tech stack and architecture with the user before generating any code. Do not scaffold a project directly - use this skill first.
 ---
 
 ## Purpose

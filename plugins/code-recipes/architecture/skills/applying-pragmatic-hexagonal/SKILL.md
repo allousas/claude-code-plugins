@@ -1,6 +1,6 @@
 ---
 name: applying-pragmatic-hexagonal
-description: Apply when creating or moving files, packages or folders (also plan mode) and the project uses hexagonal architecture (ports and adapters, domain/application/infrastructure layers) - Kotlin packages or TypeScript/NestJS src folders.
+description: ALWAYS invoke this skill when creating, moving or renaming code, packages or folders, when planning (plan mode) where new code should live, when reviewing project structure, or when the user asks about layers or dependency rules - in projects using hexagonal architecture. Covers domain/application/infrastructure layers, ports and adapters, and package or folder layout. For layered projects use applying-pragmatic-layered. Do not decide where code lives directly - use this skill first.
 ---
 
 ## Purpose

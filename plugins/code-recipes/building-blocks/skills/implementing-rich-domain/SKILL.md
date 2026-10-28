@@ -1,6 +1,6 @@
 ---
 name: implementing-rich-domain
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing domain models in the domain layer - entities, value objects, aggregates, business rules, invariants, domain errors and domain events.
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code in the domain layer, or when the user asks about domain modelling or where business logic belongs. Covers entities, value objects, aggregates, named factories, business rules and invariants, and defining domain errors and domain events. Do not write or modify domain code directly - use this skill first.
 ---
 
 ## Purpose

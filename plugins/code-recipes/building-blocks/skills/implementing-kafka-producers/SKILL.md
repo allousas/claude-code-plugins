@@ -1,6 +1,6 @@
 ---
 name: implementing-kafka-producers
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing Kafka producers or any component that publishes events/messages to Kafka (e.g. Spring `KafkaTemplate`, KafkaJS `producer.send`).
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that publishes messages to Kafka, or when the user asks about publishing integration messages. Covers message keys, message DTOs and mapping from domain events. Do not write Kafka producers directly - use this skill first.
 ---
 
 ## Purpose

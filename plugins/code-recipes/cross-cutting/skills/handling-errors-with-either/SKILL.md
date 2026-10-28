@@ -1,6 +1,6 @@
 ---
 name: handling-errors-with-either
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing any code that uses an Either / Result type for error handling. This includes adding, modifying, or fixing Either return types (Arrow Either, discriminated-union Result), sealed / union error types, either {} builders and .bind() calls, early returns on Left, fold() mappings, or Left/Right handling in any part of the code.
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that returns or handles errors as Either / Result values, or when the user asks about modelling expected failures as values. Covers sealed or union error types, chaining and short-circuiting on Left, and mapping Left/Right at the boundary. Only when the project or operation uses Either/Result - otherwise use handling-errors-with-exceptions. Do not write Either-based error handling directly - use this skill first.
 ---
 
 ## Purpose

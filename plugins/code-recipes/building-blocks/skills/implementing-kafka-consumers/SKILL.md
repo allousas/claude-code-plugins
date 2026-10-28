@@ -1,6 +1,6 @@
 ---
 name: implementing-kafka-consumers
-description: Apply when creating, refactoring, changing, planning (plan mode) or reviewing Kafka consumers or other message/stream consumers (e.g. `@KafkaListener` classes, KafkaJS consumers, NestJS `@EventPattern` handlers, classes named `*Consumer`/`*Listener`).
+description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that consumes Kafka messages, or when the user asks about consuming, filtering or retrying messages. Covers message parsing, delegation to use cases, retries with backoff and dead letter topics. Do not write Kafka consumers directly - use this skill first.
 ---
 
 ## Purpose
