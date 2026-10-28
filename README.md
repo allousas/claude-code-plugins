@@ -7,7 +7,7 @@ A collection of Claude Code plugins to enhance development workflows with AI-pow
 ## Installation
 
 ```shell
-/plugin marketplace add allousas/claude-code-e
+/plugin marketplace add allousas/claude-code-plugins
 /plugin install <plugin-name>
 ```
 
