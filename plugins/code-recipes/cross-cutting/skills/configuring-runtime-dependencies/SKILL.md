@@ -1,6 +1,6 @@
 ---
 name: configuring-runtime-dependencies
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing framework configuration or dependency injection wiring, or when the user asks about DI or configuration. Covers configuration classes and modules, bean or provider definitions, binding ports to adapters, injection tokens, configuration properties and environment variables, and global filters or interceptors. Do not wire modules or configure DI directly - use this skill first.
+description: Invoke when writing or reviewing framework configuration or dependency injection wiring (including plans), or when the user asks about DI or configuration. Covers binding ports to adapters, configuration properties and environment variables, and global filters or interceptors.
 ---
 
 ## Purpose

@@ -1,6 +1,6 @@
 ---
 name: applying-outbox-pattern
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing outbox code, when a use case writes to the database and publishes to a broker in the same flow, or when the user asks about reliable event publishing or the dual-write problem. Covers outbox tables, outbox repositories or publishers, and pollers, relays or CDC to Kafka or another broker. Do not implement reliable publishing directly - use this skill first.
+description: Invoke when writing or reviewing outbox code (including plans), when a use case writes to the database and publishes to a broker in the same flow, or when the user asks about reliable event publishing or the dual-write problem. Covers outbox tables, outbox repositories, and pollers, relays or CDC to a broker.
 ---
 
 ## Purpose

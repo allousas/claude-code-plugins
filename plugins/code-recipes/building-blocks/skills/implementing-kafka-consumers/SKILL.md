@@ -1,6 +1,6 @@
 ---
 name: implementing-kafka-consumers
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that consumes Kafka messages, or when the user asks about consuming, filtering or retrying messages. Covers message parsing, delegation to use cases, retries with backoff and dead letter topics. Do not write Kafka consumers directly - use this skill first.
+description: Invoke when writing or reviewing code that consumes Kafka messages (including plans), or when the user asks about consuming, filtering or retrying messages. Covers message parsing, delegating to use cases, retries with backoff and dead letter topics.
 ---
 
 ## Purpose

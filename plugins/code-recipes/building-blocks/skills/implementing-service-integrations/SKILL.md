@@ -1,6 +1,6 @@
 ---
 name: implementing-service-integrations
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that calls another service over HTTP, or when the user asks about integrating an external API. Covers outbound HTTP client adapters, timeouts, retries, error handling and mapping external responses. Do not write HTTP client integrations directly - use this skill first.
+description: Invoke when writing or reviewing code that calls another service over HTTP (including plans), or when the user asks about integrating an external API. Covers HTTP client adapters, timeouts, retries, error handling and mapping external responses.
 ---
 
 ## Purpose

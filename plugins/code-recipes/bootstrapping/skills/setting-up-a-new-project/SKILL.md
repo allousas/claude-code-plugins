@@ -1,6 +1,6 @@
 ---
 name: setting-up-a-new-project
-description: ALWAYS invoke this skill when the user asks to create, scaffold or bootstrap a new microservice or project from scratch, or asks about the default tech stack, build setup or initial project structure. Confirm the language, tech stack and architecture with the user before generating any code. Do not scaffold a project directly - use this skill first.
+description: Invoke when the user asks to create, scaffold or bootstrap a new microservice or project from scratch, or asks about the default tech stack, build setup or initial project structure.
 ---
 
 ## Purpose

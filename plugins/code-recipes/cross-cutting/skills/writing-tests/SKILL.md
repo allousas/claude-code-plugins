@@ -1,6 +1,6 @@
 ---
 name: writing-tests
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing any test - including tests added as part of implementing a feature - or when the user asks about test structure or conventions. Covers unit, integration and component tests, fixtures, fakes vs mocks, assertions, containerised dependencies and HTTP stubs. Do not write tests directly - use this skill first.
+description: Invoke when writing or reviewing any test (including plans and tests added while implementing a feature), or when the user asks about test structure or conventions. Covers unit, integration and component tests, fixtures, fakes vs mocks, assertions, containerised dependencies and HTTP stubs.
 ---
 
 ## Purpose

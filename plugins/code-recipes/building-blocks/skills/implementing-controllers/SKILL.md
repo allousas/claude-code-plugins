@@ -1,6 +1,6 @@
 ---
 name: implementing-controllers
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing HTTP controllers or REST endpoints, or when the user asks about API or endpoint design. Covers routes, request/response DTOs, status codes and headers, and delegating to use cases or query handlers. Do not write controllers or endpoint code directly - use this skill first.
+description: Invoke when writing or reviewing HTTP controllers or REST endpoints (including plans), or when the user asks about API or endpoint design. Covers routes, request/response DTOs, status codes, headers, and delegating to use cases or query handlers.
 ---
 
 ## Purpose

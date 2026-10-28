@@ -1,6 +1,6 @@
 ---
 name: reviewing-code-for-cleanliness
-description: ALWAYS invoke this skill when, and ONLY when, the user explicitly asks to review or audit code for readability, maintainability or clean code. Covers naming, nesting, function size, comments, immutability and idiomatic language constructs. Do not use it for regular implementation work.
+description: Invoke only when the user explicitly asks to review or audit code for readability, maintainability or clean code - not for regular implementation work. Covers naming, nesting, function size, comments, immutability and idiomatic constructs.
 ---
 
 ## Purpose

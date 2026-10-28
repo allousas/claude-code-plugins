@@ -1,6 +1,6 @@
 ---
 name: implementing-query-handlers
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing query handlers, read services or read-only use cases, or when the user asks about data retrieval or separating reads from commands. Covers projections, views and aggregations. Do not write query handlers directly - use this skill first.
+description: Invoke when writing or reviewing query handlers, read services or read-only use cases (including plans), or when the user asks about data retrieval or separating reads from commands. Covers projections, views and aggregations.
 ---
 
 ## Purpose

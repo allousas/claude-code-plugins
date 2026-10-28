@@ -1,6 +1,6 @@
 ---
 name: aligning-existing-code-with-guidelines
-description: ALWAYS invoke this skill when applying or planning changes and the existing codebase patterns differ from the patterns in any loaded skill. Ask the user whether to follow the skill recommendations or keep consistency with the existing code. Do not silently pick one side - use this skill first.
+description: Invoke when applying or planning changes and existing codebase patterns differ from the patterns in any loaded skill, so the user can choose between the skill's recommendation and consistency with existing code.
 ---
 
 ## Purpose

@@ -1,6 +1,6 @@
 ---
 name: handling-errors-with-exceptions
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that throws, catches or defines errors, or when the user asks how to model, propagate or map failures. Covers domain and infrastructure exception hierarchies, propagation, the global exception handler, error-to-response and error-code mapping, and promoting hot exceptions to result types. The default unless the project or operation uses Either/Result. Do not write error-handling code directly - use this skill first.
+description: Invoke when defining error or exception types, translating infrastructure exceptions, mapping errors to HTTP responses or error codes, or writing a global exception handler (including plans), or when the user asks how to model or propagate failures. The default unless the project or operation uses Either/Result - then use handling-errors-with-either.
 ---
 
 ## Purpose

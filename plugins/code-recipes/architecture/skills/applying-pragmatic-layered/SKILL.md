@@ -1,6 +1,6 @@
 ---
 name: applying-pragmatic-layered
-description: ALWAYS invoke this skill when creating, moving or renaming code, packages or folders, when planning (plan mode) where new code should live, when reviewing project structure, or when the user asks about layers or dependency direction - in projects using layered architecture. Covers entrypoint/business/infrastructure layers without ports, and package or folder layout. For hexagonal projects use applying-pragmatic-hexagonal. Do not decide where code lives directly - use this skill first.
+description: Invoke when creating, moving or renaming code, packages or folders, when deciding where new code should live (including plans), or when the user asks about layers or dependency direction - in layered projects (entrypoint/business/infrastructure, no ports). Covers layer responsibilities and package or folder layout. For hexagonal projects use applying-pragmatic-hexagonal.
 ---
 
 ## Purpose

@@ -1,6 +1,6 @@
 ---
 name: applying-domain-event-publisher
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that publishes or reacts to domain events, or when the user asks about domain events. Covers the domain event publisher port, in-memory publishers, in-process subscribers for logging and metrics, and their wiring. For reliable delivery to a broker use applying-outbox-pattern. Do not write event publishing code directly - use this skill first.
+description: Invoke when writing or reviewing code that publishes or reacts to domain events (including plans), or when the user asks about domain events. Covers the publisher port, in-memory publishers, in-process subscribers and their wiring. For reliable delivery to a broker use applying-outbox-pattern.
 ---
 ## What it is
 A pattern that introduces an abstraction for publishing domain events, allowing the domain or application layer to emit events without depending on messaging infrastructure.

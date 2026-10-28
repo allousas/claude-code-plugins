@@ -1,6 +1,6 @@
 ---
 name: implementing-kafka-producers
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that publishes messages to Kafka, or when the user asks about publishing integration messages. Covers message keys, message DTOs and mapping from domain events. Do not write Kafka producers directly - use this skill first.
+description: Invoke when writing or reviewing code that publishes messages to Kafka (including plans), or when the user asks about publishing integration messages. Covers message keys, message DTOs and mapping from domain events. For publishing tied to a database write use applying-outbox-pattern.
 ---
 
 ## Purpose

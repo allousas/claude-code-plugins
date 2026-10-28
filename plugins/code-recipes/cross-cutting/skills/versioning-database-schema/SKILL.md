@@ -1,6 +1,6 @@
 ---
 name: versioning-database-schema
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing database migrations or any schema change - including when a new feature needs a new table or column - or when the user asks about evolving the database schema. Covers migration scripts, tables, columns, indexes and constraints. Do not write migrations directly - use this skill first.
+description: Invoke when writing or reviewing database migrations or any schema change (including plans), including when a feature needs a new table or column, or when the user asks about evolving the schema. Covers migration scripts, tables, columns, indexes and constraints.
 ---
 
 ## Purpose

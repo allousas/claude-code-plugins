@@ -1,6 +1,6 @@
 ---
 name: handling-errors-with-either
-description: ALWAYS invoke this skill when writing, changing, refactoring, planning (plan mode) or reviewing code that returns or handles errors as Either / Result values, or when the user asks about modelling expected failures as values. Covers sealed or union error types, chaining and short-circuiting on Left, and mapping Left/Right at the boundary. Only when the project or operation uses Either/Result - otherwise use handling-errors-with-exceptions. Do not write Either-based error handling directly - use this skill first.
+description: Invoke when writing or reviewing code that returns or handles errors as Either/Result values (including plans), or when the user asks about modelling expected failures as values. Covers sealed or union error types, chaining on Left, and mapping at the boundary. Only when the project or operation uses Either/Result - otherwise use handling-errors-with-exceptions.
 ---
 
 ## Purpose
